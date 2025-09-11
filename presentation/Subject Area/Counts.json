@@ -1,0 +1,15 @@
+{
+  "presentationTable" : {
+    "name" : "Counts",
+    "presentationColumns" : [ {
+      "name" : "# of Customers",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.# of Customers"
+    }, {
+      "name" : "# of Orders",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.# of Orders"
+    }, {
+      "name" : "# of Products",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.# of Products"
+    } ]
+  }
+}

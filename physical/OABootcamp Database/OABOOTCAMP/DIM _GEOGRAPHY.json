@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM _GEOGRAPHY",
+    "sourceTable": "physicalTable:OABootcamp Database.OABOOTCAMP.D_GEOGRAPHY",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "ADDR_KEY"
+      ]
+    ]
+  }
+}

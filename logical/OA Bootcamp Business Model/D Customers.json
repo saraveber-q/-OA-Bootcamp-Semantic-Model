@@ -1,0 +1,199 @@
+{
+  "logicalTable" : {
+    "name" : "D Customers",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Customer Nr." ],
+    "logicalColumns" : [ {
+      "name" : "Customer Segment",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_SEGMENT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer Segment"
+    }, {
+      "name" : "Credit Rate",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_CRDT_RATE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Gender",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_GENDER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Gender"
+    }, {
+      "name" : "Marital Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_MARITAL_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Marital Status"
+    }, {
+      "name" : "Type",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_TYPE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer Nr.",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_NUMBER" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Birth Date",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_BIRTH_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Customer",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_CUSTOMERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Customer"
+    }, {
+      "name" : "Age",
+      "dataType" : "INT",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "LOGICAL_COLUMNS",
+        "logicalExpression" : {
+          "expressionTemplate" : " TIMESTAMPDIFF( SQL_TSI_YEAR , %1,  CURRENT_DATE )",
+          "expressionObjects" : [ "logicalColumn:OA Bootcamp Business Model.D Customers.Birth Date" ]
+        }
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_CUSTOMERS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Customers",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Customers",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Gender",
+        "numberOfElements" : 2,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : true,
+        "primaryKey" : [ "Gender" ],
+        "displayKey" : "Gender"
+      }, {
+        "name" : "Customer",
+        "numberOfElements" : 100000,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Nr." ],
+        "displayKey" : "Customer Nr."
+      }, {
+        "name" : "Marital Status",
+        "numberOfElements" : 5,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Marital Status" ],
+        "displayKey" : "Marital Status"
+      }, {
+        "name" : "Customer Segment",
+        "numberOfElements" : 10,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Customer Segment" ],
+        "displayKey" : "Customer Segment"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Gender Hierarchy",
+        "levels" : [ "All Customers", "Gender", "Customer" ]
+      }, {
+        "name" : "Gender Hierarchy-1",
+        "levels" : [ "All Customers", "Marital Status", "Customer" ]
+      }, {
+        "name" : "Gender Hierarchy-2",
+        "levels" : [ "All Customers", "Customer Segment", "Customer" ]
+      } ]
+    }
+  }
+}

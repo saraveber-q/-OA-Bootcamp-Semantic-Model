@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM_PRODUCTS",
+    "sourceTable": "physicalTable:OABootcamp Database.OABOOTCAMP.D_PRODUCTS",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "PROD_ITEM_KEY"
+      ]
+    ]
+  }
+}

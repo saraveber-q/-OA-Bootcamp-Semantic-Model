@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM_CUSTOMERS",
+    "sourceTable": "physicalTable:OABootcamp Database.OABOOTCAMP.D_CUSTOMERS",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "CUST_NUMBER"
+      ]
+    ]
+  }
+}

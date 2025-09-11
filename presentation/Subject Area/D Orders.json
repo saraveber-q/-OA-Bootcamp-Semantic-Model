@@ -1,0 +1,46 @@
+{
+  "presentationTable" : {
+    "name" : "D Orders",
+    "presentationColumns" : [ {
+      "name" : "Order Key",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Orders.Order Key"
+    }, {
+      "name" : "Order Status",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Orders.Order Status"
+    }, {
+      "name" : "Chanell name",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Orders.Chanell name"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Order Statuses Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.All Orders"
+      }, {
+        "name" : "Order Status",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.Order Status",
+        "displayColumn" : "presentationColumn:Subject Area.D Orders.Order Status"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.Order",
+        "displayColumn" : "presentationColumn:Subject Area.D Orders.Order Key"
+      } ]
+    }, {
+      "name" : "Channel Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Orders",
+      "levels" : [ {
+        "name" : "All Orders",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.All Orders"
+      }, {
+        "name" : "Channel",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.Channel",
+        "displayColumn" : "presentationColumn:Subject Area.D Orders.Chanell name"
+      }, {
+        "name" : "Order",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Orders.Order",
+        "displayColumn" : "presentationColumn:Subject Area.D Orders.Order Key"
+      } ]
+    } ]
+  }
+}

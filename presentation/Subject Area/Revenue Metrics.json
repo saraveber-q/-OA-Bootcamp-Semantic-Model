@@ -1,0 +1,33 @@
+{
+  "presentationTable" : {
+    "name" : "Revenue Metrics",
+    "presentationColumns" : [ {
+      "name" : "Units Sold",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Units Sold"
+    }, {
+      "name" : "Revenue (€)",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Revenue (€)"
+    }, {
+      "name" : "Discount Value",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Discount Value"
+    }, {
+      "name" : "Revenue Year Ago",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Revenue Year Ago"
+    }, {
+      "name" : "Revenue YTD",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Revenue YTD"
+    }, {
+      "name" : "Revenue YoY",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Revenue YoY"
+    }, {
+      "name" : "Revenue YoY %",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Revenue YoY %"
+    }, {
+      "name" : "Total Anual Revenue by Customer Segment",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Total Anual Revenue by Customer Segment"
+    }, {
+      "name" : "Total Anual Revenue",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Total Anual Revenue"
+    } ]
+  }
+}

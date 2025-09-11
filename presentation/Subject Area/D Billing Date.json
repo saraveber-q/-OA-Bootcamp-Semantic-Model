@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "D Billing Date",
+    "presentationColumns" : [ {
+      "name" : "Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Timestamp"
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Date"
+    }, {
+      "name" : "Day of week",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Day of week"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Month"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Quarter"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Week"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Billing Date.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Billing Date Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Billing Date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Year",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Quarter",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Month",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Month"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Day",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Date"
+      } ]
+    }, {
+      "name" : "Billing Date Weekly Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Billing Date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Total"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Week",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Billing Date.Day",
+        "displayColumn" : "presentationColumn:Subject Area.D Billing Date.Date"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "physicalTable": {
+    "name": "DIM_TIME_PAID_DT",
+    "sourceTable": "physicalTable:OABootcamp Database.OABOOTCAMP.D_TIME",
+    "caching": {
+      "enable": true
+    },
+    "additionalKeys": [
+      [
+        "DAY_DT"
+      ]
+    ]
+  }
+}

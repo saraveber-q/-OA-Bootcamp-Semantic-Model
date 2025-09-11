@@ -1,0 +1,263 @@
+{
+  "logicalTable" : {
+    "name" : "D Geography",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Address ID" ],
+    "logicalColumns" : [ {
+      "name" : "Area",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.AREA" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Area"
+    }, {
+      "name" : "Address ID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.ADDR_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Adress"
+    }, {
+      "name" : "ZIP Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.POSTAL_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Postal Code"
+    }, {
+      "name" : "City",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.CITY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "City"
+    }, {
+      "name" : "Street Address",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.ADDRESS1" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Adress"
+    }, {
+      "name" : "Additional Address Info",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.ADDRESS2" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Adress"
+    }, {
+      "name" : "Country Code",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.COUNTRY_CODE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Country"
+    }, {
+      "name" : "Country",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.COUNTRY_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Country"
+    }, {
+      "name" : "State or Province",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.STATE_PROV" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "State / Province"
+    }, {
+      "name" : "Region",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.REGION" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Region"
+    }, {
+      "name" : "Latitude",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.LATITUDE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Adress"
+    }, {
+      "name" : "Longitude",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM _GEOGRAPHY",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.LONGITUDE" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Adress"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM _GEOGRAPHY",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Geographies",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Geographies",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Region",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Region" ],
+        "displayKey" : "Region"
+      }, {
+        "name" : "Area",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Area" ],
+        "displayKey" : "Area"
+      }, {
+        "name" : "Country",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Country Code" ],
+        "displayKey" : "Country Code"
+      }, {
+        "name" : "State / Province",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "State or Province" ],
+        "displayKey" : "State or Province"
+      }, {
+        "name" : "City",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "City" ],
+        "displayKey" : "City"
+      }, {
+        "name" : "Postal Code",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "ZIP Code" ],
+        "displayKey" : "ZIP Code"
+      }, {
+        "name" : "Adress",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Address ID" ],
+        "displayKey" : "Address ID"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Geography Hierarhy",
+        "levels" : [ "All Geographies", "Region", "Area", "Country", "State / Province", "City", "Postal Code", "Adress" ]
+      } ]
+    }
+  }
+}

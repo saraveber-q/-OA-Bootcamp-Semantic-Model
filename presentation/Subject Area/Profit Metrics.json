@@ -1,0 +1,21 @@
+{
+  "presentationTable" : {
+    "name" : "Profit Metrics",
+    "presentationColumns" : [ {
+      "name" : "Profit",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Profit"
+    }, {
+      "name" : "Fixed Cost",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Fixed Cost"
+    }, {
+      "name" : "Variable Cost",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Variable Cost"
+    }, {
+      "name" : "Total Costs",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Total Costs"
+    }, {
+      "name" : "Profit Margin %",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.F Revenue.Profit Margin %"
+    } ]
+  }
+}

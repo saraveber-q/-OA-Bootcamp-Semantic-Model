@@ -1,0 +1,76 @@
+{
+  "presentationTable" : {
+    "name" : "D Customers",
+    "presentationColumns" : [ {
+      "name" : "Customer Segment",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Customer Segment"
+    }, {
+      "name" : "Credit Rate",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Credit Rate"
+    }, {
+      "name" : "Gender",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Gender"
+    }, {
+      "name" : "Marital Status",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Marital Status"
+    }, {
+      "name" : "Type",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Type"
+    }, {
+      "name" : "Customer Nr.",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Customer Nr\\."
+    }, {
+      "name" : "Birth Date",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Birth Date"
+    }, {
+      "name" : "Customer",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Customers.Customer"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Gender Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.All Customers"
+      }, {
+        "name" : "Gender",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Gender",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Gender"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Customer",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Customer Nr\\."
+      } ]
+    }, {
+      "name" : "Maritial Status Hierarhy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.All Customers"
+      }, {
+        "name" : "Marital Status",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Marital Status",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Marital Status"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Customer",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Customer Nr\\."
+      } ]
+    }, {
+      "name" : "Customer Segments Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Customers",
+      "levels" : [ {
+        "name" : "All Customers",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.All Customers"
+      }, {
+        "name" : "Customer Segment",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Customer Segment",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Customer Segment"
+      }, {
+        "name" : "Customer",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Customers.Customer",
+        "displayColumn" : "presentationColumn:Subject Area.D Customers.Customer Nr\\."
+      } ]
+    } ]
+  }
+}

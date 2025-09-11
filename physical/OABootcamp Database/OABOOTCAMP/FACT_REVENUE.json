@@ -1,0 +1,58 @@
+{
+  "physicalTable": {
+    "name": "FACT_REVENUE",
+    "sourceTable": "physicalTable:OABootcamp Database.OABOOTCAMP.F_REVENUE",
+    "caching": {
+      "enable": true
+    },
+    "joins": [      {
+        "rightTable": "physicalTable:OABootcamp Database.DIM_ORDERS",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.ORDER_KEY",
+            "rightColumn": "physicalColumn:OABootcamp Database.DIM_ORDERS.ORDER_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.ADDR_KEY",
+            "rightColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM _GEOGRAPHY.ADDR_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.CUST_NUMBER",
+            "rightColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_CUSTOMERS.CUST_NUMBER"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OABootcamp Database.OABOOTCAMP.DIM_PRODUCTS",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.PROD_ITEM_KEY",
+            "rightColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_PRODUCTS.PROD_ITEM_KEY"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OABootcamp Database.OABOOTCAMP.DIM_TIME_BILL_DT",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.TIME_BILL_DT",
+            "rightColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_TIME_BILL_DT.DAY_DT"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:OABootcamp Database.OABOOTCAMP.DIM_TIME_PAID_DT",
+        "joinConditions": [          {
+            "leftColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.FACT_REVENUE.TIME_PAID_DT",
+            "rightColumn": "physicalColumn:OABootcamp Database.OABOOTCAMP.DIM_TIME_PAID_DT.DAY_DT"
+          }
+        ]
+      }
+    ]
+  }
+}

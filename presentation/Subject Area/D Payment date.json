@@ -1,0 +1,66 @@
+{
+  "presentationTable" : {
+    "name" : "D Payment date",
+    "presentationColumns" : [ {
+      "name" : "Timestamp",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Timestamp"
+    }, {
+      "name" : "Date",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Date"
+    }, {
+      "name" : "Day of week",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Day of week"
+    }, {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Month"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Quarter"
+    }, {
+      "name" : "Week",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Week"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Payment date.Year"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Payment Date Weekly Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Payment date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Total"
+      }, {
+        "name" : "Year",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Year",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Year"
+      }, {
+        "name" : "Quarter",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Quarter",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Quarter"
+      }, {
+        "name" : "Month",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Month",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Month"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Day",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Date"
+      } ]
+    }, {
+      "name" : "Hierarchy_1",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Payment date",
+      "levels" : [ {
+        "name" : "Total",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Total"
+      }, {
+        "name" : "Week",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Week",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Week"
+      }, {
+        "name" : "Day",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Payment date.Day",
+        "displayColumn" : "presentationColumn:Subject Area.D Payment date.Date"
+      } ]
+    } ]
+  }
+}

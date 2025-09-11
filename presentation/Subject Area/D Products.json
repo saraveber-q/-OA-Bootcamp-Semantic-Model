@@ -1,0 +1,52 @@
+{
+  "presentationTable" : {
+    "name" : "D Products",
+    "presentationColumns" : [ {
+      "name" : "Product Line of Business",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Product Line of Business"
+    }, {
+      "name" : "Product Type",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Product Type"
+    }, {
+      "name" : "Brand",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Brand"
+    }, {
+      "name" : "Product Name",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Product Name"
+    }, {
+      "name" : "Product Description",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Product Description"
+    }, {
+      "name" : "Product ID",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Products.Product ID"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Products Hierarchy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Products",
+      "levels" : [ {
+        "name" : "All Products",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.All Products"
+      }, {
+        "name" : "Brand",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.Brand",
+        "displayColumn" : "presentationColumn:Subject Area.D Products.Brand"
+      }, {
+        "name" : "Line of Business",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.Line of Business",
+        "displayColumn" : "presentationColumn:Subject Area.D Products.Product Line of Business"
+      }, {
+        "name" : "Product Type",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.Product Type",
+        "displayColumn" : "presentationColumn:Subject Area.D Products.Product Type"
+      }, {
+        "name" : "Product",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.Product",
+        "displayColumn" : "presentationColumn:Subject Area.D Products.Product Name"
+      }, {
+        "name" : "Product Item",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Products.Product Item",
+        "displayColumn" : "presentationColumn:Subject Area.D Products.Product ID"
+      } ]
+    } ]
+  }
+}

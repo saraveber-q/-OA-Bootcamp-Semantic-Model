@@ -1,0 +1,28 @@
+{
+  "subjectArea" : {
+    "name" : "Subject Area",
+    "sourceBusinessModel" : "businessModel:OA Bootcamp Business Model",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Subject Area.D Billing Date"
+    }, {
+      "name" : "presentationTable:Subject Area.D Products"
+    }, {
+      "name" : "presentationTable:Subject Area.D Payment date"
+    }, {
+      "name" : "presentationTable:Subject Area.D Orders"
+    }, {
+      "name" : "presentationTable:Subject Area.D Geography"
+    }, {
+      "name" : "presentationTable:Subject Area.D Customers"
+    }, {
+      "name" : "presentationTable:Subject Area.F Sales",
+      "children" : [ {
+        "name" : "presentationTable:Subject Area.Revenue Metrics"
+      }, {
+        "name" : "presentationTable:Subject Area.Profit Metrics"
+      }, {
+        "name" : "presentationTable:Subject Area.Counts"
+      } ]
+    } ]
+  }
+}

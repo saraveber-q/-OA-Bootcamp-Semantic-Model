@@ -1,0 +1,103 @@
+{
+  "logicalTable" : {
+    "name" : "D Orders",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Order Key" ],
+    "logicalColumns" : [ {
+      "name" : "Order Key",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_ORDERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.DIM_ORDERS.ORDER_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Order"
+    }, {
+      "name" : "Order Status",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_ORDERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.DIM_ORDERS.ORDER_STATUS" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Order Status"
+    }, {
+      "name" : "Chanell name",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "DIM_ORDERS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:OABootcamp Database.DIM_ORDERS.CHANNEL_NAME" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Channel"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "DIM_ORDERS",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:OABootcamp Database.DIM_ORDERS" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "LEVEL_BASED",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "All Orders",
+      "ragged" : false,
+      "skipped" : false,
+      "logicalLevels" : [ {
+        "name" : "All Orders",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Order Status",
+        "numberOfElements" : 10,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Status" ],
+        "displayKey" : "Order Status"
+      }, {
+        "name" : "Order",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Order Key" ],
+        "displayKey" : "Order Key"
+      }, {
+        "name" : "Channel",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Chanell name" ],
+        "displayKey" : "Chanell name"
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Order Statuses Hierarchy",
+        "levels" : [ "All Orders", "Order Status", "Order" ]
+      }, {
+        "name" : "Order Statuses Hierarchy-1",
+        "levels" : [ "All Orders", "Channel", "Order" ]
+      } ]
+    }
+  }
+}

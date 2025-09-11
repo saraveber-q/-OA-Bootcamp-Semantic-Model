@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "DIM_ORDERS",
+    "sourceTable": "physicalTable:OABootcamp Database.D_ORDERS",
+    "additionalKeys": [
+      [
+        "ORDER_KEY"
+      ]
+    ]
+  }
+}

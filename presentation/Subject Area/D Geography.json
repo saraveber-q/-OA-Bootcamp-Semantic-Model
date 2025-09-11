@@ -1,0 +1,78 @@
+{
+  "presentationTable" : {
+    "name" : "D Geography",
+    "presentationColumns" : [ {
+      "name" : "Area",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Area"
+    }, {
+      "name" : "Address ID",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Address ID"
+    }, {
+      "name" : "ZIP Code",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.ZIP Code"
+    }, {
+      "name" : "City",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.City"
+    }, {
+      "name" : "Street Address",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Street Address"
+    }, {
+      "name" : "Additional Address Info",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Additional Address Info"
+    }, {
+      "name" : "Country Code",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Country Code"
+    }, {
+      "name" : "Country",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Country"
+    }, {
+      "name" : "State or Province",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.State or Province"
+    }, {
+      "name" : "Region",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Region"
+    }, {
+      "name" : "Latitude",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Latitude"
+    }, {
+      "name" : "Longitude",
+      "sourceLogicalColumn" : "logicalColumn:OA Bootcamp Business Model.D Geography.Longitude"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Geography Hierarhy",
+      "sourceLogicalTable" : "logicalTable:OA Bootcamp Business Model.D Geography",
+      "levels" : [ {
+        "name" : "All Geographies",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.All Geographies"
+      }, {
+        "name" : "Region",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.Region",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.Region"
+      }, {
+        "name" : "Area",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.Area",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.Area"
+      }, {
+        "name" : "Country",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.Country",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.Country Code"
+      }, {
+        "name" : "State / Province",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.State / Province",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.State or Province"
+      }, {
+        "name" : "City",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.City",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.City"
+      }, {
+        "name" : "Postal Code",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.Postal Code",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.ZIP Code"
+      }, {
+        "name" : "Adress",
+        "sourceLogicalLevel" : "logicalLevel:OA Bootcamp Business Model.D Geography.Adress",
+        "displayColumn" : "presentationColumn:Subject Area.D Geography.Address ID"
+      } ]
+    } ]
+  }
+}
