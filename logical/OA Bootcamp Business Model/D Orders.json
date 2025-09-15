@@ -71,14 +71,14 @@
         "disableAggregateToHigherLevel" : false
       }, {
         "name" : "Order Status",
-        "numberOfElements" : 10,
+        "numberOfElements" : 7,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Order Status" ],
         "displayKey" : "Order Status"
       }, {
         "name" : "Order",
-        "numberOfElements" : 1,
+        "numberOfElements" : 2,
         "grandTotalLevel" : false,
         "disableAggregateToHigherLevel" : false,
         "primaryKey" : [ "Order Key" ],
