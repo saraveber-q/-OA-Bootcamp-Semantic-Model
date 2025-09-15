@@ -15,14 +15,13 @@
     }, {
       "name" : "presentationTable:Subject Area.D Customers"
     }, {
-      "name" : "presentationTable:Subject Area.F Sales",
-      "children" : [ {
-        "name" : "presentationTable:Subject Area.Revenue Metrics"
-      }, {
-        "name" : "presentationTable:Subject Area.Profit Metrics"
-      }, {
-        "name" : "presentationTable:Subject Area.Counts"
-      } ]
+      "name" : "presentationTable:Subject Area.F Sales"
+    }, {
+      "name" : "presentationTable:Subject Area.Revenue Metrics"
+    }, {
+      "name" : "presentationTable:Subject Area.Profit Metrics"
+    }, {
+      "name" : "presentationTable:Subject Area.Counts"
     } ]
   }
 }
